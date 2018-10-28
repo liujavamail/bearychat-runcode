@@ -12,17 +12,6 @@ module.exports = (robot) ->
       else
         if fact.match(/```js/)
           execute_js(response, fact)
-      # console.log(_.split(response.text, "```", 3))
-
-      # fact = response.match
-      # fs.appendFileSync('runcode.rb', fact, 'utf8')
-      # process.exec('ruby runcode.rb', (error, stdout, stderr) ->
-      #   if error
-      #     response.send stderr
-      #   else
-      #     response.send stdout
-      #   fs.unlink('runcode.rb')
-      # )
   )
 
   execute_ruby = (response, text) ->
